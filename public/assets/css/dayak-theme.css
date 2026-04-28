@@ -1,0 +1,599 @@
+/* ============================================
+   COLOR PALETTE
+============================================ */
+:root {
+  --dayak-red:        #8B1A1A;
+  --dayak-red-light:  #B22222;
+  --dayak-red-bright: #C0392B;
+
+  --dayak-gold:       #D4A017;
+  --dayak-gold-light: #F0C040;
+  --dayak-gold-pale:  #F5D87A;
+
+  --dayak-dark:       #1A0A00;
+  --dayak-dark-soft:  #2C1810;
+  --dayak-brown:      #5C2D0A;
+
+  --dayak-cream:      #FAF3E0;
+  --dayak-ivory:      #FFF8F0;
+  --dayak-white:      #FFFFFF;
+
+  --red:      var(--dayak-red-light);
+  --red-dark: var(--dayak-red);
+}
+
+/* ============================================
+   MOTIF SVG PATTERNS
+============================================ */
+
+.motif-diamond {
+  background-image:
+    linear-gradient(45deg, var(--dayak-gold) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--dayak-gold) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--dayak-gold) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--dayak-gold) 75%);
+  background-size: 12px 12px;
+  background-position: 0 0, 0 6px, 6px -6px, -6px 0px;
+  opacity: 0.15;
+}
+
+.motif-stripe {
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--dayak-gold) 0px,
+    var(--dayak-gold) 2px,
+    transparent 2px,
+    transparent 10px
+  );
+  opacity: 0.12;
+}
+
+/* ============================================
+   ORNAMEN BORDER
+============================================ */
+.dayak-border-top {
+  position: relative;
+}
+.dayak-border-top::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg,
+    var(--dayak-dark) 0%,
+    var(--dayak-gold) 25%,
+    var(--dayak-red-light) 50%,
+    var(--dayak-gold) 75%,
+    var(--dayak-dark) 100%
+  );
+}
+
+.dayak-border-bottom {
+  position: relative;
+}
+.dayak-border-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg,
+    var(--dayak-dark) 0%,
+    var(--dayak-gold) 25%,
+    var(--dayak-red-light) 50%,
+    var(--dayak-gold) 75%,
+    var(--dayak-dark) 100%
+  );
+}
+
+/* ============================================
+   NAVBAR
+============================================ */
+.navbar-wrapper {
+  border-bottom: none !important;
+  box-shadow: 0 2px 0 var(--dayak-gold), 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.logo-accent {
+  color: var(--dayak-red-light) !important;
+  font-family: 'Playfair Display', serif;
+}
+
+.nav-indicator {
+  background: linear-gradient(90deg, var(--dayak-red-light), var(--dayak-gold)) !important;
+  height: 3px !important;
+  border-radius: 0 !important;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--dayak-red-light) !important;
+}
+
+.navbar-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0; right: 0;
+  height: 3px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--dayak-gold) 0px,
+    var(--dayak-gold) 8px,
+    var(--dayak-dark) 8px,
+    var(--dayak-dark) 16px,
+    var(--dayak-red-light) 16px,
+    var(--dayak-red-light) 24px,
+    var(--dayak-dark) 24px,
+    var(--dayak-dark) 32px
+  );
+  opacity: 0.7;
+}
+
+/* ============================================
+   SECTION DIVIDER
+============================================ */
+.dayak-divider {
+  width: 100%;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.dayak-divider svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ============================================
+   HERO SECTION
+============================================ */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 6px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--dayak-gold) 0px,
+    var(--dayak-gold) 6px,
+    var(--dayak-red) 6px,
+    var(--dayak-red) 12px,
+    var(--dayak-gold-light) 12px,
+    var(--dayak-gold-light) 18px,
+    var(--dayak-dark) 18px,
+    var(--dayak-dark) 24px
+  );
+  z-index: 3;
+}
+
+.hero-corner {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  z-index: 3;
+  opacity: 0.6;
+}
+.hero-corner.tl { top: 80px; left: 20px; }
+.hero-corner.tr { top: 80px; right: 20px; transform: scaleX(-1); }
+
+/* ============================================
+   SECTION TITLE
+============================================ */
+.dayak-title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+.dayak-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--dayak-gold), var(--dayak-red-light));
+}
+
+/* ============================================
+   INFO SECTION
+============================================ */
+.info-section {
+  background: var(--dayak-dark) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.info-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 40px,
+      rgba(212,160,23,0.04) 40px,
+      rgba(212,160,23,0.04) 41px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 40px,
+      rgba(212,160,23,0.04) 40px,
+      rgba(212,160,23,0.04) 41px
+    );
+  pointer-events: none;
+}
+
+.icon-wrapper {
+  border: 1px solid rgba(212,160,23,0.4) !important;
+  background: rgba(212,160,23,0.08) !important;
+}
+
+.icon-wrapper i {
+  color: var(--dayak-gold) !important;
+}
+
+.info-card:hover .icon-wrapper {
+  background: rgba(212,160,23,0.18) !important;
+  border-color: var(--dayak-gold) !important;
+}
+
+/* ============================================
+   BUTTON 
+============================================ */
+.btn-danger,
+.btn-jelajah,
+.btn-selengkapnya {
+  background: var(--dayak-red-light) !important;
+  border-color: var(--dayak-red-light) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-danger::before,
+.btn-jelajah::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+    rgba(212,160,23,0.15) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.btn-danger:hover,
+.btn-jelajah:hover {
+  background: var(--dayak-red) !important;
+  border-color: var(--dayak-red) !important;
+  box-shadow: 0 6px 20px rgba(139,26,26,0.4) !important;
+}
+
+/* ============================================
+   FOOTER
+============================================ */
+.footer-section {
+  background: linear-gradient(160deg, var(--dayak-dark) 0%, var(--dayak-dark-soft) 100%) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent 0px,
+    transparent 8px,
+    rgba(212,160,23,0.03) 8px,
+    rgba(212,160,23,0.03) 10px
+  );
+  pointer-events: none;
+}
+
+.footer-section::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg,
+    var(--dayak-dark) 0%,
+    var(--dayak-gold) 30%,
+    var(--dayak-red-light) 50%,
+    var(--dayak-gold) 70%,
+    var(--dayak-dark) 100%
+  );
+}
+
+.footer-section .title {
+  color: var(--dayak-gold-pale) !important;
+}
+
+.social-icon {
+  border-color: rgba(212,160,23,0.3) !important;
+}
+.social-icon:hover {
+  background: var(--dayak-gold) !important;
+  color: var(--dayak-dark) !important;
+  border-color: var(--dayak-gold) !important;
+}
+
+.copyright {
+  border-top-color: rgba(212,160,23,0.15) !important;
+}
+
+/* ============================================
+   WISATA CARDS
+============================================ */
+.wisata-card:hover {
+  box-shadow: 0 15px 40px rgba(139,26,26,0.35), 0 0 0 2px var(--dayak-gold) !important;
+}
+
+/* ============================================
+   ABOUT SECTION
+============================================ */
+.about-img {
+  border: 3px solid transparent !important;
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(135deg, var(--dayak-gold), var(--dayak-red-light)) border-box !important;
+}
+
+/* ============================================
+   ORNAMEN DAYAK
+============================================ */
+.dayak-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 0;
+}
+
+.dayak-ornament span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--dayak-gold);
+  transform: rotate(45deg);
+}
+
+.dayak-ornament span:nth-child(2) {
+  width: 12px;
+  height: 12px;
+  background: var(--dayak-red-light);
+}
+
+.dayak-ornament span:nth-child(3) {
+  width: 20px;
+  height: 20px;
+  background: var(--dayak-gold);
+}
+
+.dayak-ornament span:nth-child(4) {
+  width: 12px;
+  height: 12px;
+  background: var(--dayak-red-light);
+}
+
+.dayak-ornament span:nth-child(5) {
+  width: 8px;
+  height: 8px;
+  background: var(--dayak-gold);
+}
+
+/* ============================================
+   SECTION HEADER LINE
+============================================ */
+.section-header .line {
+  background: linear-gradient(90deg, var(--dayak-red-light), var(--dayak-gold)) !important;
+}
+
+/* ============================================
+   AGENDA CARD
+============================================ */
+.agenda-card {
+  background: linear-gradient(135deg, var(--dayak-red-light), var(--dayak-red)) !important;
+  border: 1px solid rgba(212,160,23,0.2) !important;
+}
+
+/* ============================================
+   CONTACT CARD
+============================================ */
+.contact-card.dark {
+  background: var(--dayak-dark-soft) !important;
+  border: 1px solid rgba(212,160,23,0.1) !important;
+}
+
+.contact-card i {
+  color: var(--dayak-gold) !important;
+}
+
+/* ============================================
+   CALENDAR HEADER
+============================================ */
+.calendar-header {
+  background: linear-gradient(135deg, var(--dayak-red-light), var(--dayak-red)) !important;
+}
+
+.date.has-event {
+  background: rgba(139,26,26,0.1) !important;
+}
+
+.date.today {
+  border-color: var(--dayak-red-light) !important;
+}
+
+.dot {
+  background: var(--dayak-gold) !important;
+}
+
+/* ============================================
+   READ MORE
+============================================ */
+.read-more {
+  color: var(--dayak-red-light) !important;
+}
+
+.btn-more {
+  border-color: var(--dayak-gold) !important;
+  color: var(--dayak-brown) !important;
+}
+.btn-more:hover {
+  border-color: var(--dayak-red-light) !important;
+  color: var(--dayak-red-light) !important;
+  background: rgba(139,26,26,0.04) !important;
+}
+
+/* ============================================
+   CTA SECTION
+============================================ */
+.cta-btn {
+  background: var(--dayak-red-light) !important;
+  border: 2px solid var(--dayak-gold) !important;
+  box-shadow: 0 6px 20px rgba(139,26,26,0.4) !important;
+}
+.cta-btn:hover {
+  background: var(--dayak-red) !important;
+  color: white !important;
+}
+
+/* ============================================
+   MAP OVERLAY BUTTON
+============================================ */
+.map-overlay button {
+  background: var(--dayak-red-light) !important;
+  border: 1px solid var(--dayak-gold) !important;
+}
+
+/* ============================================
+   HERO TITLE
+============================================ */
+.hero-title {
+  text-shadow: 2px 4px 20px rgba(0,0,0,0.5);
+}
+
+/* Garis bawah nama di hero */
+.hero-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--dayak-gold), transparent);
+  margin: 12px auto 0;
+}
+
+/* ============================================
+   FASILITAS SECTION
+============================================ */
+.fasilitas-section {
+  background: linear-gradient(90deg, var(--dayak-dark) 50%, var(--dayak-dark-soft) 50%) !important;
+}
+
+.check {
+  color: var(--dayak-gold) !important;
+}
+
+.list i {
+  color: var(--dayak-gold) !important;
+}
+
+/* ============================================
+   PUBLIKASI HERO & TENTANG HERO
+============================================ */
+.hero-publikasi .overlay,
+.hero-kontak .overlay,
+.hero-tentang .overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(26,10,0,0.7),
+    rgba(26,10,0,0.88)
+  ) !important;
+}
+
+/* ============================================
+   POSTINGAN CARD hover
+============================================ */
+.postingan-card:hover {
+  box-shadow: 0 10px 25px rgba(139,26,26,0.12) !important;
+}
+
+/* ============================================
+   GALERI ITEM hover
+============================================ */
+.gallery-item:hover {
+  box-shadow: 0 0 0 3px var(--dayak-gold) !important;
+  border-radius: 10px;
+}
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+@media (max-width: 768px) {
+  .hero-corner { display: none; }
+}
+
+/* ============================================
+   SECTION DIVIDER DAYAK
+============================================ */
+.dayak-section-divider {
+  padding: 20px 0;
+  background: var(--dayak-ivory);
+  text-align: center;
+}
+
+.dayak-strip {
+  height: 4px;
+  background: repeating-linear-gradient(90deg,
+    var(--dayak-gold) 0px, var(--dayak-gold) 8px,
+    transparent 8px, transparent 12px,
+    var(--dayak-red-light) 12px, var(--dayak-red-light) 20px,
+    transparent 20px, transparent 24px,
+    var(--dayak-gold) 24px, var(--dayak-gold) 32px,
+    transparent 32px, transparent 36px
+  );
+  opacity: 0.5;
+  margin: 6px 0;
+}
+
+.dayak-strip.reverse {
+  background: repeating-linear-gradient(90deg,
+    var(--dayak-red-light) 0px, var(--dayak-red-light) 8px,
+    transparent 8px, transparent 12px,
+    var(--dayak-gold) 12px, var(--dayak-gold) 20px,
+    transparent 20px, transparent 24px,
+    var(--dayak-red-light) 24px, var(--dayak-red-light) 32px,
+    transparent 32px, transparent 36px
+  );
+}
+
+.about-section   { background: #ffffff !important; }
+.wisata-section  { background: #ffffff !important; }
+.galeri-section  { background: #fff !important; }
+
+.section-title span,
+.about-title .title-accent,
+.cta-title span,
+.ag-title span,
+.fasilitas-section .title span,
+.sejarah-section .title span {
+  color: var(--dayak-red-light) !important;
+}
+
+.sejarah-img,
+.highlight-img {
+  border: 2px solid transparent !important;
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(135deg, var(--dayak-gold), var(--dayak-red-light)) border-box !important;
+}
+
+.btn-red {
+  background: var(--dayak-red-light) !important;
+}
+.btn-red:hover {
+  background: var(--dayak-red) !important;
+}
