@@ -1,5 +1,4 @@
 <?php
-$pageTitle = 'Ubah Password';
 $active    = 'password';
 require ROOT . '/app/views/admin/partials/header.php';
 ?>
