@@ -2,7 +2,8 @@
 
 <div align="center">
 
-<img src="documentation/readme-screenshots/00-readme-banner.png" alt="Banner README Desa Wisata Budaya Pampang" width="1100">
+<img width="1024" height="271" alt="image" src="https://github.com/user-attachments/assets/f637c3f3-b028-4d15-8049-4c35a0a4db72" />
+
 
 </div>
 
@@ -170,8 +171,8 @@ Pastikan lingkungan pengembangan memiliki komponen berikut sebelum memulai:
 **1. Klon repositori**
 
 ```bash
-git clone https://github.com/username/desa-wisata-pampang.git
-cd desa-wisata-pampang
+git clone https://github.com/Pecatpecut/desa_wisata_budaya_pampang.git
+cd desa_wisata_budaya_pampang
 ```
 
 > Letakkan folder proyek di dalam direktori web root, misalnya `htdocs/` (XAMPP) atau `www/` (Laragon).
@@ -389,7 +390,7 @@ C:.
 
 <div align="center">
 
-<img src="documentation/readme-screenshots/01-beranda.png" alt="Screenshot laman Beranda Desa Wisata Budaya Pampang" width="920">
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/ec2992b1-27a1-421d-b683-d113192a16e4" />
 
 </div>
 
@@ -399,7 +400,8 @@ C:.
 
 <div align="center">
 
-<img src="documentation/readme-screenshots/02-tentang.png" alt="Screenshot laman Tentang Desa Wisata Budaya Pampang" width="920">
+<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/aa458fb2-2d81-4657-9995-b192ba275a2e" />
+
 
 </div>
 
@@ -409,7 +411,8 @@ C:.
 
 <div align="center">
 
-<img src="documentation/readme-screenshots/03-publikasi.png" alt="Screenshot laman Publikasi Desa Wisata Budaya Pampang" width="920">
+<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/157457f5-e6d3-4777-8c65-c1f0a96da8fb" />
+
 
 </div>
 
@@ -419,7 +422,8 @@ C:.
 
 <div align="center">
 
-<img src="documentation/readme-screenshots/04-kontak.png" alt="Screenshot laman Kontak Desa Wisata Budaya Pampang" width="920">
+<img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/d45f82a1-d01e-4bfd-b217-722586c0699f" />
+
 
 </div>
 
@@ -429,7 +433,8 @@ C:.
 
 <div align="center">
 
-<img src="documentation/readme-screenshots/05-login-admin.png" alt="Screenshot laman Login Admin Desa Wisata Budaya Pampang" width="920">
+<img width="1920" height="1080" alt="5" src="https://github.com/user-attachments/assets/85d5e332-2d19-4ed6-8f6c-7f56295fc269" />
+
 
 </div>
 
@@ -439,7 +444,8 @@ C:.
 
 <div align="center">
 
-<img src="documentation/readme-screenshots/06-admin-dashboard.png" alt="Screenshot laman Dashboard Admin Desa Wisata Budaya Pampang" width="920">
+<img width="1920" height="1080" alt="6" src="https://github.com/user-attachments/assets/e96ff504-a390-4b07-accf-e32315e8cd05" />
+
 
 </div>
 
@@ -449,7 +455,8 @@ C:.
 
 <div align="center">
 
-<img src="documentation/readme-screenshots/07-admin-postingan.png" alt="Screenshot laman Manajemen Postingan Admin" width="920">
+<img width="1920" height="1080" alt="7" src="https://github.com/user-attachments/assets/8432463a-9a34-43e2-aeea-406ef5ce15bf" />
+
 
 </div>
 
@@ -459,7 +466,8 @@ C:.
 
 <div align="center">
 
-<img src="documentation/readme-screenshots/08-admin-agenda.png" alt="Screenshot laman Manajemen Agenda Admin" width="920">
+<img width="1920" height="1080" alt="8" src="https://github.com/user-attachments/assets/7463e445-8765-47b0-8994-7e90737e07d8" />
+
 
 </div>
 
@@ -469,7 +477,8 @@ C:.
 
 <div align="center">
 
-<img src="documentation/readme-screenshots/09-admin-galeri.png" alt="Screenshot laman Manajemen Galeri Admin" width="920">
+<img width="1920" height="1080" alt="9" src="https://github.com/user-attachments/assets/a5fb5e09-a829-424e-92b8-e80d1279c75c" />
+
 
 </div>
 
@@ -479,7 +488,8 @@ C:.
 
 <div align="center">
 
-<img src="documentation/readme-screenshots/10-admin-kontak.png" alt="Screenshot laman Manajemen Kontak Admin" width="920">
+<img width="1920" height="1080" alt="10" src="https://github.com/user-attachments/assets/6424f7a7-3c10-4e96-9954-d62f1b93d090" />
+
 
 </div>
 
@@ -505,7 +515,8 @@ C:.
 
 <div align="center">
 
-<img src="documentation/readme-screenshots/11-readme-footer.png" alt="Footer visual README Desa Wisata Budaya Pampang" width="1100">
+<img width="1024" height="275" alt="image" src="https://github.com/user-attachments/assets/37cf821a-ccf0-4bb2-a30e-9c99475a62fd" />
+
 
 </div>
 
