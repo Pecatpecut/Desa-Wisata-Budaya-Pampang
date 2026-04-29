@@ -1,5 +1,4 @@
 <?php
-$pageTitle = 'Dashboard';
 $active    = 'dashboard';
 require ROOT . '/app/views/admin/partials/header.php';
 ?>
