@@ -66,7 +66,7 @@ Dalam konteks instruksi proyek PBW, komponen *detail wisata* direalisasikan mela
 Jika Anda ingin melihat pengalaman lengkapnya secara langsung, kunjungi website resmi Desa Wisata Budaya Pampang di:
 
 <p align="center">
-  <a href="http://desawisatabudayapampang">
+  <a href="https://desa-budaya-pampang.great-site.net/">
     <img src="https://img.shields.io/badge/Kunjungi%20Website-desawisatabudayapampang-2e7d32?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Kunjungi website Desa Wisata Budaya Pampang" />
   </a>
 </p>
