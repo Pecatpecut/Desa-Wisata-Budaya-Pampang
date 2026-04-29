@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /desa_wisata_budaya_pampang/
+RewriteBase /
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
