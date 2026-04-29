@@ -125,13 +125,16 @@ createApp({
 <?php endif; ?>
 
 <style>
+/* Quick links */
 .quick-link { display:flex; align-items:center; gap:12px; background:white; border:1px solid #f0f0f0; border-radius:12px; padding:16px 20px; text-decoration:none; color:#333; transition:.2s; font-size:14px; font-weight:500; }
 .quick-link:hover { border-color:#c0392b; color:#c0392b; transform:translateY(-2px); box-shadow:0 8px 20px rgba(0,0,0,.06); }
 .quick-link i { font-size:1.2rem; }
 
+/* Agenda toggle */
 .dash-agenda-desktop { display:block; }
 .dash-agenda-mobile  { display:none; }
 
+/* Agenda mobile cards */
 .agenda-card { background:#fafafa; border-radius:12px; border:1px solid #f0f0f0; padding:12px 14px; margin-bottom:8px; }
 .agenda-card-top { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; }
 .agenda-card-info { flex:1; min-width:0; }
@@ -139,9 +142,32 @@ createApp({
 .agenda-card-meta  { font-size:12px; color:#888; margin-bottom:2px; }
 .agenda-card-meta i { margin-right:4px; }
 
+/* Dashboard post list */
+.post-list { display:flex; flex-direction:column; gap:10px; }
+.post-card { display:flex; align-items:center; gap:14px; padding:12px 14px; background:#fafafa; border-radius:12px; border:1px solid #f0f0f0; }
+.thumb-wrap { width:80px; height:60px; border-radius:8px; overflow:hidden; flex-shrink:0; }
+.thumb-wrap img { width:100%; height:100%; object-fit:cover; }
+.post-body { flex:1; min-width:0; }
+.post-body h5 { margin:0 0 4px; font-size:14px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.source, .date { font-size:12px; color:#888; margin:0 0 2px; }
+.btn-open { padding:6px 12px; border-radius:8px; background:#f0f0f0; color:#333; text-decoration:none; font-size:13px; white-space:nowrap; transition:.2s; display:flex; align-items:center; flex-shrink:0; }
+.btn-open:hover { background:#c0392b; color:white; }
+
 @media (max-width: 768px) {
+  /* Agenda */
   .dash-agenda-desktop { display:none; }
   .dash-agenda-mobile  { display:block; }
+
+  /* Dashboard post card */
+  .post-card { flex-wrap:wrap; gap:8px; padding:10px 12px; }
+  .thumb-wrap { width:60px; height:46px; }
+  .post-body { flex:1; min-width:calc(100% - 80px); }
+  .post-body h5 { font-size:13px; white-space:normal; }
+  .btn-open { width:100%; justify-content:center; font-size:12px; padding:7px 10px; }
+}
+
+@media (max-width: 480px) {
+  .post-body h5 { font-size:12px; }
 }
 </style>
 
@@ -169,14 +195,6 @@ createApp({
 <?php endif; ?>
 
 <style>
-.post-list { display:flex; flex-direction:column; gap:10px; }
-.post-card { display:flex; align-items:center; gap:16px; padding:14px 16px; background:#fafafa; border-radius:12px; border:1px solid #f0f0f0; }
-.thumb-wrap { width:80px; height:60px; border-radius:8px; overflow:hidden; flex-shrink:0; }
-.thumb-wrap img { width:100%; height:100%; object-fit:cover; }
-.post-body { flex:1; min-width:0; }
-.post-body h5 { margin:0 0 4px; font-size:14px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-.source, .date { font-size:12px; color:#888; margin:0; }
-.btn-open { padding:6px 12px; border-radius:8px; background:#f0f0f0; color:#333; text-decoration:none; font-size:13px; white-space:nowrap; transition:.2s; }
-.btn-open:hover { background:#c0392b; color:white; }
+/* styles moved to inline <style> block above */
 </style>
 <?php require ROOT . '/app/views/admin/partials/footer.php'; ?>
