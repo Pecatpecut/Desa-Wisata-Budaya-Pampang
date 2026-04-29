@@ -1,5 +1,4 @@
 <?php
-$pageTitle = 'Manajemen Agenda';
 $active    = 'agenda';
 require ROOT . '/app/views/admin/partials/header.php';
 ?>
