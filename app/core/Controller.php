@@ -7,7 +7,7 @@ class Controller {
         if (file_exists($file)) {
             require $file;
         } else {
-            echo "View tidak ditemukan: $path";
+            Router::renderError(500);
         }
     }
 
