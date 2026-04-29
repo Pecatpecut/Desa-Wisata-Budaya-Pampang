@@ -247,7 +247,7 @@
 .btn-jelajah,
 .btn-selengkapnya {
   background: var(--dayak-red-light) !important;
-  border-color: var(--dayak-red-light) !important;
+  border-color: #f1c40f !important;
   position: relative;
   overflow: hidden;
 }
@@ -424,7 +424,7 @@
 }
 
 .date.today {
-  border-color: var(--dayak-red-light) !important;
+  border-color: #f1c40f !important;
 }
 
 .dot {
@@ -443,8 +443,8 @@
   color: var(--dayak-brown) !important;
 }
 .btn-more:hover {
-  border-color: var(--dayak-red-light) !important;
-  color: var(--dayak-red-light) !important;
+  border-color: #f1c40f !important;
+  color: #f1c40f !important;
   background: rgba(139,26,26,0.04) !important;
 }
 
@@ -576,11 +576,13 @@
 
 .section-title span,
 .about-title .title-accent,
-.cta-title span,
-.ag-title span,
-.fasilitas-section .title span,
-.sejarah-section .title span {
+.ag-title span {
   color: var(--dayak-red-light) !important;
+}
+
+.fasilitas-section .title span,
+.cta-title span {
+  color: #f1c40f !important;
 }
 
 .sejarah-img,

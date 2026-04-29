@@ -21,11 +21,11 @@ require ROOT . '/app/views/admin/partials/header.php';
     <h5 class="form-title"><i class="bi bi-cloud-upload me-2"></i>Upload Foto Baru</h5>
     <form method="POST" action="<?= BASE_URL ?>/admin/galeri/upload" enctype="multipart/form-data">
       <div class="row g-3">
-        <div class="col-md-4 col-12">
+        <div class="col-12">
           <label class="form-label">Judul Foto <span class="req">*</span></label>
           <input type="text" name="title" class="form-input" placeholder="Masukkan judul foto..." v-model="uploadTitle" required />
         </div>
-        <div class="col-md-6 col-12">
+        <div class="col-12">
           <label class="form-label">Gambar <span class="req">*</span></label>
           <div class="tab-switch mb-2">
             <button type="button" :class="['tab-btn', tab==='file'?'active':'']" @click="tab='file'">
@@ -53,8 +53,8 @@ require ROOT . '/app/views/admin/partials/header.php';
             <img v-if="urlInput" :src="urlInput" style="margin-top:8px;width:80px;height:60px;object-fit:cover;border-radius:8px;border:1px solid #eee" @error="urlInput=''" />
           </div>
         </div>
-        <div class="col-md-2 col-12 d-flex align-items-end">
-          <button type="submit" class="btn-red w-100"><i class="bi bi-plus-lg me-1"></i>Upload</button>
+        <div class="col-12 d-flex justify-content-end">
+          <button type="submit" class="btn-red btn-sm-submit"><i class="bi bi-plus-lg me-1"></i>Upload</button>
         </div>
       </div>
     </form>
@@ -135,6 +135,7 @@ require ROOT . '/app/views/admin/partials/header.php';
 .pg-num{width:32px;height:32px;border-radius:6px;border:1px solid #e0e0e0;background:white;cursor:pointer;font-size:13px;transition:.2s}
 .pg-num:hover{background:#f0f0f0;color:#c0392b;border-color:#c0392b}
 .pg-num.active{background:#c0392b;color:white;border-color:#c0392b}
+.btn-sm-submit{padding:8px 22px;font-size:13px;width:auto;display:inline-flex;align-items:center}
 </style>
 
 <script>

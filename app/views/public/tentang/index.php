@@ -20,7 +20,7 @@ require ROOT . '/app/views/public/partials/header.php';
       <div class="col-lg-6 reveal fade-left">
         <div class="text-content">
           <p>Di tengah perkembangan zaman yang terus bergerak cepat, Desa Budaya Pampang berdiri sebagai ruang hidup yang menjaga jejak tradisi. Desa ini dihuni oleh masyarakat suku Dayak Kenyah, yang dahulu berasal dari wilayah pedalaman seperti Kutai Barat dan Malinau.</p>
-          <p>Pada sekitar tahun 1960-an, mereka melakukan perjalanan panjang meninggalkan tanah asalnya. Bukan sekadar perpindahan tempat, tetapi sebuah langkah besar untuk masa depan—mendekatkan diri ke wilayah yang lebih mudah mengakses pendidikan dan layanan kesehatan.</p>
+          <p>Pada sekitar tahun 1960-an, mereka melakukan perjalanan panjang meninggalkan tanah asalnya. Bukan sekadar perpindahan tempat, tetapi sebuah langkah besar untuk masa depan mendekatkan diri ke wilayah yang lebih mudah mengakses pendidikan dan layanan kesehatan. Dengan tekad yang kuat, mereka membangun kehidupan baru di tempat yang kini dikenal sebagai Desa Budaya Pampang, tanpa melupakan akar budaya dan tradisi leluhur yang tetap mereka jaga hingga hari ini.</p>
         </div>
       </div>
       <div class="col-lg-6 reveal fade-right">
@@ -33,7 +33,7 @@ require ROOT . '/app/views/public/partials/header.php';
       <div class="col-12 reveal fade-up">
         <div class="text-content">
           <p>Di tanah baru ini, masyarakat mulai membangun kehidupan tanpa melepaskan identitasnya. Tradisi tetap dijaga, nilai-nilai adat terus dihidupkan, dan kebersamaan menjadi fondasi utama dalam kehidupan sehari-hari. Kegiatan seperti gotong royong, perayaan keagamaan, hingga panen raya menjadi bagian yang tidak terpisahkan dari kehidupan mereka.</p>
-          <p>Waktu terus berjalan, namun semangat menjaga budaya tidak pernah pudar. Desa Pampang tumbuh bukan hanya sebagai tempat tinggal, tetapi sebagai ruang pelestarian warisan leluhur yang tetap hidup di tengah modernitas. Hingga akhirnya, pada tahun 1991, Pemerintah Provinsi Kalimantan Timur secara resmi menetapkan Desa Pampang sebagai desa budaya. Sejak saat itu, Pampang dikenal sebagai salah satu pusat pelestarian budaya Dayak Kenyah—tempat di mana tradisi tidak hanya dikenang, tetapi terus dijalani.</p>
+          <p>Waktu terus berjalan, namun semangat menjaga budaya tidak pernah pudar. Desa Pampang tumbuh bukan hanya sebagai tempat tinggal, tetapi sebagai ruang pelestarian warisan leluhur yang tetap hidup di tengah modernitas. Hingga akhirnya, pada tahun 1991, Pemerintah Provinsi Kalimantan Timur secara resmi menetapkan Desa Pampang sebagai desa budaya. Sejak saat itu, Pampang dikenal sebagai salah satu pusat pelestarian budaya Dayak Kenyah tempat di mana tradisi tidak hanya dikenang, tetapi terus dijalani.</p>
         </div>
       </div>
     </div>

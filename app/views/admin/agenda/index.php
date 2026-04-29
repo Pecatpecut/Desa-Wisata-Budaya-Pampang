@@ -44,9 +44,11 @@ require ROOT . '/app/views/admin/partials/header.php';
             {{ form.date || '-' }} {{ form.time || '' }} &bull;
             {{ form.location || '-' }}
           </div>
+          <div class="col-12 d-flex justify-content-end">
           <button type="submit" class="btn-red" :disabled="!formValid">
             <i class="bi bi-plus-lg me-1"></i>Tambah
           </button>
+</div>
         </div>
       </div>
     </form>

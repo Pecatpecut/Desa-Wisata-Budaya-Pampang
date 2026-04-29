@@ -24,7 +24,7 @@
       <a href="<?= BASE_URL ?>/admin/agenda"     class="sidebar-link <?= ($active??'')==='agenda'    ?'active':'' ?>"><i class="bi bi-calendar3"></i> Agenda</a>
       <a href="<?= BASE_URL ?>/admin/galeri"     class="sidebar-link <?= ($active??'')==='galeri'    ?'active':'' ?>"><i class="bi bi-images"></i> Galeri</a>
       <a href="<?= BASE_URL ?>/admin/postingan"  class="sidebar-link <?= ($active??'')==='postingan' ?'active':'' ?>"><i class="bi bi-newspaper"></i> Postingan</a>
-      <a href="<?= BASE_URL ?>/admin/kontak"     class="sidebar-link <?= ($active??'')==='kontak'    ?'active':'' ?>"><i class="bi bi-gear"></i> Kontak</a>
+      <a href="<?= BASE_URL ?>/admin/kontak"     class="sidebar-link <?= ($active??'')==='kontak'    ?'active':'' ?>"><i class="bi bi-person"></i> Kontak</a>
       <a href="<?= BASE_URL ?>/admin/password"   class="sidebar-link <?= ($active??'')=='password'  ?'active':'' ?>"><i class="bi bi-shield-lock"></i> Ubah Password</a>
     </nav>
     <div class="sidebar-footer">

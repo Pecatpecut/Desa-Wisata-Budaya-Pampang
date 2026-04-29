@@ -35,7 +35,7 @@ require ROOT . '/app/views/admin/partials/header.php';
           <label class="form-label">Sumber / Credit <span class="req">*</span></label>
           <input type="text" name="source" class="form-input" placeholder="contoh: Kompas.com / @akun" v-model="form.source" required />
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-8">
           <label class="form-label">Thumbnail <span class="req">*</span></label>
           <div class="tab-switch mb-2">
             <button type="button" :class="['tab-btn', tab==='file'?'active':'']" @click="tab='file'">
@@ -45,7 +45,7 @@ require ROOT . '/app/views/admin/partials/header.php';
               <i class="bi bi-link-45deg me-1"></i>URL Gambar
             </button>
           </div>
-          <div v-show="tab==='file'">
+          <div v-if="tab==='file'">
             <div class="file-drop" @click="$refs.thumbInput.click()" @dragover.prevent @drop.prevent="onDrop">
               <template v-if="!previewFile">
                 <i class="bi bi-image fs-3 text-muted"></i>
@@ -58,13 +58,13 @@ require ROOT . '/app/views/admin/partials/header.php';
             </div>
             <input type="file" ref="thumbInput" name="thumbnail" accept="image/jpeg,image/png,image/webp,image/gif" style="display:none" @change="onFileChange" />
           </div>
-          <div v-show="tab==='url'">
-            <input type="text" name="thumbnail_url" class="form-input" placeholder="https://contoh.com/gambar.jpg" v-model="urlInput" />
-            <img v-if="urlInput" :src="urlInput" style="margin-top:8px;width:80px;height:60px;object-fit:cover;border-radius:8px;border:1px solid #eee" @error="urlInput=''" />
+          <div v-else="tab==='url'" class="d-flex align-items-center gap-2">
+            <input type="text" name="thumbnail_url" class="form-input flex-grow-1" placeholder="https://contoh.com/gambar.jpg" v-model="urlInput" />
+            <img v-if="urlInput" :src="urlInput" style="width:80px;height:60px;object-fit:cover;border-radius:8px;border:1px solid #eee;flex-shrink:0" @error="urlInput=''" />
           </div>
         </div>
-        <div class="col-12 col-md-2 d-flex align-items-end">
-          <button type="submit" class="btn-red w-100"><i class="bi bi-plus-lg me-1"></i>Tambah</button>
+        <div class="col-12 d-flex justify-content-end">
+          <button type="submit" class="btn-red btn-sm-submit"><i class="bi bi-plus-lg me-1"></i>Tambah</button>
         </div>
       </div>
     </form>
@@ -164,46 +164,28 @@ require ROOT . '/app/views/admin/partials/header.php';
 </div>
 
 <style>
-/* ── Post list ── */
 .post-list{display:flex;flex-direction:column;gap:10px}
-.post-card{display:flex;align-items:center;gap:14px;padding:14px 16px;background:white;border-radius:14px;border:1px solid #f0f0f0;transition:.25s;flex-wrap:nowrap}
+.post-card{display:flex;align-items:center;gap:16px;padding:14px 16px;background:white;border-radius:14px;border:1px solid #f0f0f0;transition:.25s}
 .post-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.06)}
 .thumb-wrap{width:90px;height:68px;border-radius:10px;overflow:hidden;flex-shrink:0}
 .thumb-wrap img{width:100%;height:100%;object-fit:cover}
 .post-body{flex:1;min-width:0}
 .post-body h5{margin:0 0 4px;font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .source,.date{font-size:12px;color:#888;margin:0 0 2px}
-.post-actions{display:flex;gap:8px;flex-shrink:0;align-items:center}
-.btn-open{padding:7px 14px;border-radius:8px;background:#f0f0f0;color:#333;text-decoration:none;font-size:13px;transition:.2s;display:flex;align-items:center;white-space:nowrap}
+.post-actions{display:flex;gap:8px;flex-shrink:0;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.btn-open{padding:7px 14px;border-radius:8px;background:#f0f0f0;color:#333;text-decoration:none;font-size:13px;transition:.2s;display:flex;align-items:center}
 .btn-open:hover{background:#c0392b;color:white}
-
-/* ── Pagination ── */
+.btn-sm-submit{padding:8px 22px;font-size:13px;width:auto;display:inline-flex;align-items:center}
 .pg-btn{width:32px;height:32px;border-radius:6px;border:1px solid #e0e0e0;background:white;cursor:pointer;font-size:15px;transition:.2s}
 .pg-btn:hover:not(:disabled){background:#f0f0f0;border-color:#c0392b;color:#c0392b}
 .pg-btn:disabled{opacity:.4;cursor:default}
 .pg-num{width:32px;height:32px;border-radius:6px;border:1px solid #e0e0e0;background:white;cursor:pointer;font-size:13px;transition:.2s}
 .pg-num:hover{background:#f0f0f0;color:#c0392b;border-color:#c0392b}
 .pg-num.active{background:#c0392b;color:white;border-color:#c0392b}
-
-/* ── Mobile ≤ 768px ── */
-@media(max-width:768px){
-  /* Form tambah - semua kolom full width */
-  .form-card .row > [class*="col-"]{flex:0 0 100%;max-width:100%;width:100%}
-
-  /* Post card wrap */
-  .post-card{flex-wrap:wrap;gap:10px;padding:12px;align-items:flex-start}
-  .thumb-wrap{width:72px;height:56px}
-  .post-body{flex:1;min-width:0}
-  .post-body h5{font-size:13px;white-space:normal}
-  .post-actions{width:100%;flex-wrap:wrap;gap:6px;padding-top:8px;border-top:1px solid #f5f5f5;justify-content:flex-start}
-  .btn-open{font-size:12px;padding:6px 12px}
-}
-
-/* ── Mobile ≤ 480px ── */
-@media(max-width:480px){
-  .thumb-wrap{width:58px;height:46px}
-  .post-body h5{font-size:12px}
-  .pg-btn,.pg-num{width:28px;height:28px;font-size:12px}
+@media(max-width:576px){
+  .post-card{flex-wrap:wrap}
+  .thumb-wrap{width:70px;height:52px}
+  .post-actions{width:100%;justify-content:flex-start;padding-top:4px;border-top:1px solid #f5f5f5;margin-top:4px}
 }
 </style>
 
