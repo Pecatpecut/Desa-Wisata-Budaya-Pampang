@@ -1,5 +1,4 @@
 <?php
-$pageTitle = 'Manajemen Galeri';
 $active    = 'galeri';
 require ROOT . '/app/views/admin/partials/header.php';
 ?>
